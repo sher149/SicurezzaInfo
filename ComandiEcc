@@ -21,14 +21,13 @@ ip link show:	ci mostra le schede di rete installate sul calcolatore
 per cambiare MAC address: 
 ip link set dev "scheda di rete" down
 ip link set dev "scheda di rete" address 00:00:00:00:00:01	impostando questo
-																MAC address il pc non
-																può più navigare in internet
+							        MAC address il pc non
+								può più navigare in internet
 ip link set dev "scheda di rete" up  
 
 service network-manager restart: fa ripartire il funzionamento della connessione alla rete
 
-hostname:	ci dice il nome del nostro pc (componente della rete, questo nome viene 
-											visualizzato dai "ficcanaso")
+hostname:	ci dice il nome del nostro pc (componente della rete, questo nome viene visualizzato dai "ficcanaso")
 
 hostnamectl:ci dà maggiori informazioni sul nostro pc
 
@@ -38,11 +37,11 @@ SERVER DNS: si occupano di tradurre il nome di un domino nel relativo indirizzo 
 
 DNS: -pubblici -privati
 -pubblici: più sicuri, le richieste ai DNS saranno più veloci -- fanno uso di due IP: DNS primario
-e DNS secondario.
+e DNS secondario (8.8.8.8, 8.8.4.4)
 
 nano /etc/resolv.conf: possiamo andare a modificare manualmente i DNS (ricordati di
-					             riavviare la rete col comando già visto, service network-manager 
-						           restart.
+		       riavviare la rete col comando già visto, service network-manager 
+		       restart.
 
 nmcli device show "scheda di rete" | grep IP4.DNS: mostra i nostri indirizzi DNS in uso
 
