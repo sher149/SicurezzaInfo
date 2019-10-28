@@ -1,10 +1,10 @@
-ls:		conoscere i file e le directory nel percorso in cui ci troviamo
+ls:	conoscere i file e le directory nel percorso in cui ci troviamo
 
-cd: 		per entrare in una cartella
+cd: 	per entrare in una cartella
 
 cd..:	per tornare indietro di una cartella
 
-cp: 		per copiare un file (sintassi cp (file) (nuovofile))
+cp: 	per copiare un file (sintassi cp (file) (nuovofile))
 
 mv:	per spostare o rinominare un file (stessa sinstassi di cp)
 
@@ -29,7 +29,7 @@ service network-manager restart: fa ripartire il funzionamento della connessione
 
 hostname:	ci dice il nome del nostro pc (componente della rete, questo nome viene visualizzato dai "ficcanaso")
 
-hostnamectl:ci dà maggiori informazioni sul nostro pc
+hostnamectl:	ci dà maggiori informazioni sul nostro pc
 
 sysctl kernel.hostname="nuovo nome":	va a cambiare permanentemente il nome del pc
 
